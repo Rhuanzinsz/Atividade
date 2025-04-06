@@ -40,9 +40,13 @@ const Jogos = () => {
       <Text style={styles.title}>Jogos</Text>
       {jogosData.map((jogo, index) => (
         <View key={index} style={styles.jogoContainer}>
-          <Image source={jogo.image} style={styles.jogoImage} />
-          <Text style={styles.jogoName}>{jogo.name}</Text>
-          <Text style={styles.jogoDescription}>{jogo.description}</Text>
+          <View style={styles.imageContainer}>
+            <Image source={jogo.image} style={styles.jogoImage} />
+            <View style={styles.descriptionContainer}>
+              <Text style={styles.jogoName}>{jogo.name}</Text>
+              <Text style={styles.jogoDescription}>{jogo.description}</Text>
+            </View>
+          </View>
         </View>
       ))}
     </ScrollView>
@@ -62,19 +66,29 @@ const styles = StyleSheet.create({
   jogoContainer: {
     marginBottom: 20,
   },
-  jogoImage: {
-    width: '100%',
-    height: 200,
+  imageContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#f0f0f0',
     borderRadius: 10,
+    padding: 10,
+  },
+  jogoImage: {
+    width: 150,
+    height: 100,
+    borderRadius: 10,
+    marginRight: 10,
+  },
+  descriptionContainer: {
+    flex: 1,
   },
   jogoName: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginTop: 10,
+    marginBottom: 5,
   },
   jogoDescription: {
     fontSize: 16,
-    marginTop: 5,
   },
 });
 
