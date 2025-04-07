@@ -7,11 +7,11 @@ const Cyberpunk2077Page = ({ onGoBack }) => {
       <TouchableOpacity style={styles.backButton} onPress={onGoBack}>
         <Text style={styles.backButtonText}>Voltar</Text>
       </TouchableOpacity>
+      <Image source={require('./assets/cyberpunk2.jpg')} style={styles.pageImage} />
       <Text style={styles.pageTitle}>Cyberpunk 2077</Text>
       <Text style={styles.pageDescription}>
-        Um RPG de ação de mundo aberto ambientado em Night City.
+        Em um futuro distópico, Night City é um playground para V, um mercenário em busca de um implante que garante a imortalidade. Explore, lute e decida o destino desta metrópole sombria.
       </Text>
-      {}
     </View>
   );
 };
@@ -22,11 +22,11 @@ const TheLastOfUsPartIIPage = ({ onGoBack }) => {
       <TouchableOpacity style={styles.backButton} onPress={onGoBack}>
         <Text style={styles.backButtonText}>Voltar</Text>
       </TouchableOpacity>
+      <Image source={require('./assets/TLOUPART2.jpg')} style={styles.pageImage} />
       <Text style={styles.pageTitle}>The Last of Us Part II</Text>
       <Text style={styles.pageDescription}>
-        Uma sequência emocionante e brutal do aclamado jogo de ação e aventura.
+        UmaThe Last of Us Part II é um jogo de ação-aventura intenso e emocionalmente carregado. Explora temas de vingança, perda e redenção em um mundo pós-apocalíptico brutal. A narrativa complexa e os personagens multifacetados geram debates e reflexões profundas.
       </Text>
-      {}
     </View>
   );
 };
@@ -37,11 +37,11 @@ const DemonsSoulsPage = ({ onGoBack }) => {
       <TouchableOpacity style={styles.backButton} onPress={onGoBack}>
         <Text style={styles.backButtonText}>Voltar</Text>
       </TouchableOpacity>
+      <Image source={require('./assets/demonsouls.jpg')} style={styles.pageImage} />
       <Text style={styles.pageTitle}>Demon's Souls</Text>
       <Text style={styles.pageDescription}>
-        Um remake impressionante do clássico jogo de RPG de ação.
+      Demon's Souls, RPG de ação da FromSoftware, é conhecido por sua dificuldade, atmosfera sombria e design de níveis complexo. Situado em Boletaria, o jogador luta contra demônios em um mundo interconectado, com morte punitiva e sistema de tendências influente.
       </Text>
-      {}
     </View>
   );
 };
@@ -52,11 +52,11 @@ const HaloInfinitePage = ({ onGoBack }) => {
       <TouchableOpacity style={styles.backButton} onPress={onGoBack}>
         <Text style={styles.backButtonText}>Voltar</Text>
       </TouchableOpacity>
+      <Image source={require('./assets/haloinfinite.jpg')} style={styles.pageImage} />
       <Text style={styles.pageTitle}>Halo Infinite</Text>
       <Text style={styles.pageDescription}>
-        O mais novo capítulo da saga Halo, com uma campanha épica e multiplayer intenso.
+      Halo Infinite traz o Master Chief em mundo aberto no anel Halo Zeta, lutando contra os Banidos. Com gancho de agarramento e multiplayer gratuito, o jogo equilibra campanha e modos online.
       </Text>
-      {}
     </View>
   );
 };
@@ -67,11 +67,11 @@ const ForzaHorizon5Page = ({ onGoBack }) => {
       <TouchableOpacity style={styles.backButton} onPress={onGoBack}>
         <Text style={styles.backButtonText}>Voltar</Text>
       </TouchableOpacity>
+      <Image source={require('./assets/forza.jpg')} style={styles.pageImage} />
       <Text style={styles.pageTitle}>Forza Horizon 5</Text>
       <Text style={styles.pageDescription}>
-        Um jogo de corrida de mundo aberto com paisagens deslumbrantes e carros incríveis.
+      Forza Horizon 5, um jogo de corrida de mundo aberto da Playground Games, leva os jogadores ao México com paisagens deslumbrantes, carros personalizáveis e corridas emocionantes. É um festival de velocidade e diversão.
       </Text>
-      {}
     </View>
   );
 };
@@ -82,11 +82,11 @@ const RatchetClankPage = ({ onGoBack }) => {
       <TouchableOpacity style={styles.backButton} onPress={onGoBack}>
         <Text style={styles.backButtonText}>Voltar</Text>
       </TouchableOpacity>
+      <Image source={require('./assets/Ratchet.jpg')} style={styles.pageImage} />
       <Text style={styles.pageTitle}>Ratchet & Clank: Rift Apart</Text>
       <Text style={styles.pageDescription}>
-        Uma aventura interdimensional com gráficos impressionantes e jogabilidade divertida.
+      Ratchet & Clank: Rift Apart é um jogo de ação e aventura exclusivo para PS5, onde os jogadores exploram dimensões alternativas com gráficos impressionantes, jogabilidade fluida e uma história emocionante.
       </Text>
-      {}
     </View>
   );
 };
@@ -237,6 +237,12 @@ const styles = StyleSheet.create({
   backButtonText: {
     fontSize: 16,
   },
+  pageImage: {
+    width: '50%',
+    height: '50%',
+    borderRadius: 50,
+    marginBottom: 50,
+  } 
 });
 
 export default App;
